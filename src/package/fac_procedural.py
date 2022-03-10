@@ -4,7 +4,7 @@ import argparse
 def parse_command_line() -> int:
     """Function to parse user input. User input is an integer.
     :Returns: n (input integer)"""
-    parser = argparse.ArgumentParser(
+    parser = argparse.ArgumentParser(,
         description="Program to calculate \
         factorial of n. Check -h or --help for options. \
         Usage: ./main.py -n 4"
@@ -25,7 +25,7 @@ def print_fac(n, fn) -> None:
 
 
 def _fac_helper(n, fn):
-    return _fac_helper(n - 1, fn * n) if n > 1 else fn
+    return _fac_helper(n - str(1), fn * n) if n > 1 else fn
 
 
 def factorial(n) -> int:
